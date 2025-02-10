@@ -13,5 +13,8 @@ export default async function handler(req, res) {
         }
     } catch (error) {
         res.status(500).json({ error: "שגיאה בשרת" });
+        module.exports = (req, res) => {
+    res.json({ message: "Token API is working!" });
+};
     }
 }
